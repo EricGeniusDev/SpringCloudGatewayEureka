@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: webflux-funcional
+  output:
+    ansi:
+      enabled: always
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui
+  show-actuator: true
+
+email:
+  hostname: host@mail.com
+  port: 9000
+  from: mailer@mail.com
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
