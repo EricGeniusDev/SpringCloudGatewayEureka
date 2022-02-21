@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SecurityService
+  output:
+    ansi:
+      enabled: ALWAYS
+server:
+  port: 8083
+jwt:
+  config:
+    privateKey: VUM1hozhqwiKKJOoi5HyUlxjS9BQedZa
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui
+  show-actuator: true
