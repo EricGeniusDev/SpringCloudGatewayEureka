@@ -1,0 +1,23 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: product-service
+  output:
+    ansi:
+      enabled: always
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui
+  show-actuator: true
+  
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8082/eureka/
